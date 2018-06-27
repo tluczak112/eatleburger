@@ -1,4 +1,4 @@
-var connection = require("../config/connection.js");
+var connection = require("./connection.js");
 
 var orm = {
   all: function(tableInput, cb) {
@@ -20,6 +20,6 @@ var orm = {
           cb(result);
       })
   }
-};
+}
 
 module.exports = orm;
